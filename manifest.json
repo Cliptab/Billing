@@ -1,0 +1,23 @@
+{
+  "name": "Cliptab Billing Pro",
+  "short_name": "Cliptab Billing",
+  "description": "Professional Invoice & Billing App for Cliptab",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e11d48",
+  "orientation": "portrait",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
