@@ -1,0 +1,409 @@
+/* ==========================
+   CLIPTAB BILLING PRO
+========================== */
+
+:root{
+  --primary:#e11d48;
+  --dark:#111827;
+  --light:#ffffff;
+  --bg:#f5f7fb;
+  --border:#e5e7eb;
+  --text:#374151;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+}
+
+/* HEADER */
+
+.header{
+  background:#fff;
+  padding:15px 25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:var(--shadow);
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+.logo-area{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo{
+  width:70px;
+  height:70px;
+  object-fit:contain;
+}
+
+.logo-area h1{
+  color:var(--primary);
+  font-size:24px;
+}
+
+.logo-area p{
+  font-size:13px;
+  color:#777;
+}
+
+#themeBtn{
+  border:none;
+  background:var(--primary);
+  color:white;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:18px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+  padding:25px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+
+.card h2{
+  color:var(--primary);
+  font-size:30px;
+}
+
+.card p{
+  margin-top:10px;
+  color:#666;
+}
+
+/* FORM */
+
+.form-section{
+  background:#fff;
+  margin:25px;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}
+
+.form-section h2{
+  margin-bottom:20px;
+  color:var(--dark);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:14px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  outline:none;
+  font-size:15px;
+}
+
+textarea{
+  margin-top:15px;
+  resize:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:var(--primary);
+}
+
+.generate-btn{
+  width:100%;
+  margin-top:20px;
+  padding:15px;
+  border:none;
+  background:var(--primary);
+  color:white;
+  font-size:16px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.generate-btn:hover{
+  opacity:.9;
+}
+
+/* INVOICE */
+
+.invoice-preview{
+  display:none;
+  padding:25px;
+}
+
+.invoice-box{
+  background:#fff;
+  max-width:900px;
+  margin:auto;
+  padding:40px;
+  border-radius:20px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.watermark{
+  position:absolute;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  pointer-events:none;
+}
+
+.watermark img{
+  width:450px;
+  opacity:.05;
+}
+
+.invoice-header{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.invoice-logo{
+  width:90px;
+}
+
+.invoice-header h2{
+  color:var(--primary);
+}
+
+.invoice-info{
+  margin:20px 0;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.client-info{
+  margin:15px 0;
+}
+
+.client-info p{
+  margin-bottom:6px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+table th{
+  background:var(--primary);
+  color:#fff;
+}
+
+table th,
+table td{
+  border:1px solid #ddd;
+  padding:12px;
+  text-align:left;
+}
+
+.totals{
+  text-align:right;
+  margin-top:20px;
+}
+
+.totals h2{
+  color:var(--primary);
+}
+
+.note{
+  margin-top:20px;
+  padding:15px;
+  background:#f9fafb;
+  border-left:4px solid var(--primary);
+}
+
+.invoice-actions{
+  display:flex;
+  gap:15px;
+  margin-top:25px;
+}
+
+.invoice-actions button{
+  flex:1;
+  border:none;
+  background:var(--primary);
+  color:white;
+  padding:14px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* HISTORY */
+
+.history{
+  background:#fff;
+  margin:25px;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}
+
+.history h2{
+  margin-bottom:20px;
+}
+
+.history-item{
+  border:1px solid var(--border);
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.history-item h4{
+  color:var(--primary);
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:25px;
+  color:#666;
+}
+
+/* DARK MODE */
+
+.dark{
+  --bg:#0f172a;
+  --light:#111827;
+  --text:#f3f4f6;
+}
+
+.dark body{
+  background:#0f172a;
+}
+
+.dark .header,
+.dark .card,
+.dark .form-section,
+.dark .invoice-box,
+.dark .history{
+  background:#1e293b;
+  color:#fff;
+}
+
+.dark input,
+.dark select,
+.dark textarea{
+  background:#0f172a;
+  color:#fff;
+  border-color:#334155;
+}
+
+.dark .note{
+  background:#0f172a;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .dashboard{
+    grid-template-columns:1fr;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .invoice-header{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .invoice-info{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .invoice-actions{
+    flex-direction:column;
+  }
+
+  .invoice-box{
+    padding:20px;
+  }
+
+  .watermark img{
+    width:250px;
+  }
+
+  .logo{
+    width:55px;
+    height:55px;
+  }
+
+  .logo-area h1{
+    font-size:18px;
+  }
+}
+
+/* PRINT */
+
+@media print{
+
+  body{
+    background:#fff;
+  }
+
+  .header,
+  .dashboard,
+  .form-section,
+  .history,
+  .invoice-actions,
+  footer{
+    display:none;
+  }
+
+  .invoice-preview{
+    display:block !important;
+    padding:0;
+  }
+
+  .invoice-box{
+    box-shadow:none;
+    border:none;
+    max-width:100%;
+  }
+  }
